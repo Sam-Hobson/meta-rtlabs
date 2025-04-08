@@ -4,12 +4,12 @@ LICENSE = "GPLv3 | commercial"
 LIC_FILES_CHKSUM = "file://LICENSE.md;md5=207cc6189ccb6e2be4f164397fc210ae"
 SECTION = "console/network"
 
-SRC_URI = "git://github.com/rtlabs-com/p-net.git"
+SRC_URI = "git://github.com/Sam-Hobson/p-net.git;protocol=https"
 SRCREV = "089df76f38df13e4b8b58e12e5d1be6d3b9aa792"
 
 # Enable these lines if using Yocto older than version 2.7
-#DEPENDS = "cmake-zeus-native"
-#DEPENDS_remove = "cmake-native"
+DEPENDS = "cmake-zeus-native"
+DEPENDS_remove = "cmake-native"
 
 S = "${WORKDIR}/git"
 
